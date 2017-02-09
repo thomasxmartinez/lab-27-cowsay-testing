@@ -1,0 +1,14 @@
+<div>
+  <h2> {{ $ctrl.title}} </h2>
+    <p> hello this is cow </p>
+  <input type="text" ng-model="$ctrl.userInput">
+  <pre>
+    {{ $ctrl.getCow($ctrl.userInput) }}
+  </pre>
+  <pre>
+    {{ $ctrl.currentCow}}
+
+  </pre>
+  <button ng-click="$ctrl.saveCow()"> save COWZA </button>
+  <button ng-click="$ctrl.undoCow()"> undo COWZA </button>
+</div>
